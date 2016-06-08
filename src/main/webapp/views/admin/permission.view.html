@@ -17,10 +17,10 @@
 	</div>
 	<div class="row">
 		<div class="col-xs-12 component-holder ng-binding ng-scope ui-draggable ui-draggable-handle" data-component="crn-grid" id="crn-grid-852138"> 
-		  <div crn-datasource="Permission" class="table-responsive" ng-hide="Permission.editing || Permission.inserting"> 
+		  <div crn-datasource="Permission" class="table-responsive panel panel-primary" ng-hide="Permission.editing || Permission.inserting"> 
 		    <table class="table  table-bordered table-hover"> 
-		      <tbody> 
-		        <tr class="table-header info"> 
+		      <thead> 
+		        <tr class="table-header"> 
 		          <th> 
 		            <div data-container="true" class="">
 		               {{'Permission.view.Path' | translate}} 
@@ -38,7 +38,7 @@
 		               {{'Permission.view.Actions' | translate}} 
 		            </div></th> 
 		        </tr> 
-		      </tbody> 
+		      </thead> 
 		      <tbody class=""> 
 		        <tr class="table-content" ng-repeat="rowData in datasource.data"> 
 		          <td> 
@@ -118,7 +118,7 @@
 		          </div> 
 		        </div> 
 		      </fieldset> 
-		      <div class="active-bar" ng-hide="!datasource.editing &amp;&amp; !datasource.inserting"> 
+		      <div class="active-bar pull-right" ng-hide="!datasource.editing &amp;&amp; !datasource.inserting"> 
 		        <button class="btn btn-success" ng-click="datasource.post()"><i class="glyphicon glyphicon-ok"></i></button> 
 		        <button class="btn btn-danger" ng-click="datasource.cancel()"><i class="glyphicon glyphicon-remove"></i></button> 
 		      </div> 
